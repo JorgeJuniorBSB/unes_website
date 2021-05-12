@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: white url('../img/fundo2.png') repeat-x top;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    min-width: 920px;
+    max-width: 1200px;
+    min-height: 100%;
+    position: relative;
+}
+
+/* ********** TOPO ***********/
+header {
+    height: 130px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 920px;
+    max-width: 1200px;
+}
+
+#logo {
+    background: url('../img/logo.png') no-repeat top left;
+    width: 213px;
+    height: 57px;
+    text-indent: -9999px;
+    float: left;
+    margin-top: 20px;
+}
+
+/* ********** MENU HORIZONTAL ***********/
+nav ul {
+    float: right;
+    margin-top: 50px;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;  
+    display: block;
+    padding: 5px 10px;
+    color: rgb(32, 54, 119);
+}
+
+nav ul li:hover {
+    border-bottom:rgba(54,63,92,0.3) solid 5px;
+    -webkit-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+}
+
+/* ********** CONTEUDO ***********/
+#capa img{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+article {
+    padding-bottom: 100px;
+}
+
+article ol,
+article ul {
+    padding-left: 50px;
+}
+
+h2 {
+    color: #363F5C;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    line-height: 22px;
+}
+
+/* ********** RODAPE ***********/
+footer {
+    clear: both;
+    text-align: center;
+    padding: 10px 0;
+    background: #6B78A6;
+    color: white;
+    position: absolute;
+    bottom:0;
+    width:100%; 
+}
+
+/* ********** FORMULARIO ***********/
+form fieldset {
+    padding: 1em;
+    margin: 20px 0;
+    width: 400px;
+    border: 1px solid #ccc;
+}
+
+form legend {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form label {
+    display: block;
+    cursor: pointer;
+}
+
+form textarea {
+    width: 100%;
+    height: 7em;
+    resize: vertical;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 25px;
+}
+
+form input[type="submit"] {
+    margin-bottom: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+#caixa-formulario {
+    flex-grow: 1;   
+}
+
+#conteudo-contato {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+}
+
+/* ********** MAPA E ENDERECO ***********/
+#caixa-endereco {
+    flex-grow: 2;
+    float: left;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+}
